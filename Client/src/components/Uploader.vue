@@ -18,6 +18,8 @@
 <script>
 
 import { ref } from 'vue'
+import {axios} from 'axios'
+
 export default {
   name: "Uploader",
   props: {
@@ -27,8 +29,25 @@ export default {
     var file= ref('');
      function handleFileChange(e) {
       this.file = e.target.files[0].name;
-      console.log(file);
-    }
+      addRecords(file);
+          }
+
+function addRecords(file){
+let url = "https://localhost:5000/upload";
+      const request = new Request(
+        url,
+        {
+          method: "POST",
+          mode: "cors",
+          cache: "default",
+          body: file
+        }
+      );
+      const res = await fetch(request);
+      const data = await res.json();
+      this.data = data;
+}
+
     return{
       file,
       handleFileChange,
