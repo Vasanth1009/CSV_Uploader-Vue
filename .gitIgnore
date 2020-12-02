@@ -1,0 +1,9 @@
+.vscode
+bin
+obj
+*.db
+appsettings.json
+*.sqbpro
+wwwroot
+*.db-shm
+*.db-wal
