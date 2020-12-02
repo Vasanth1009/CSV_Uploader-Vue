@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\Vue\\CSV Uploader\\API\\API.csproj": {}
+    "p:\\Vue\\CSV Uploader\\API\\API.csproj": {}
   },
   "projects": {
-    "P:\\Vue\\CSV Uploader\\API\\API.csproj": {
+    "p:\\Vue\\CSV Uploader\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Vue\\CSV Uploader\\API\\API.csproj",
+        "projectUniqueName": "p:\\Vue\\CSV Uploader\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "P:\\Vue\\CSV Uploader\\API\\API.csproj",
+        "projectPath": "p:\\Vue\\CSV Uploader\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Microsoft\\.nuget\\packages\\",
-        "outputPath": "P:\\Vue\\CSV Uploader\\API\\obj\\",
+        "outputPath": "p:\\Vue\\CSV Uploader\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,6 +60,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
