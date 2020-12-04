@@ -37,7 +37,7 @@ export default {
 
       formData.append("file", localFile);
 
-      return http.post("/upload", formData, {
+      return http.post("/Upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
