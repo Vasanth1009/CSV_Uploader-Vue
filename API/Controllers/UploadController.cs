@@ -1,14 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.ObjectModel;
 using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Net.Http.Headers;
-using CSVUploader.Resources.Helpers;
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-namespace CSVUploader.Controllers
+namespace API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
