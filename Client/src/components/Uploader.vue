@@ -22,7 +22,10 @@ import http from "../http-common";
 export default {
   name: "Uploader",
   props: {
-    msg: String,
+    msg: {
+      type: String,
+    } 
+      
   },
   setup() {
     var file = ref("");
